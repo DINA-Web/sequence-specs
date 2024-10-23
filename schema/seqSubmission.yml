@@ -208,25 +208,6 @@ components:
         relationships:
           type: object
           properties:
-            seqBatch:
-              type: object
-              nullable: true
-              required:
-                - data
-              properties:
-                data:
-                  type: object
-                  required:
-                    - type
-                    - id
-                  properties:
-                    type:
-                      enum: [seq-batch]
-                    id:
-                      type: string
-                      format: uuid
-                      description: SeqBatch id
-                      example: 99e59304-b63d-42d8-ba03-4c1d415f5d5a
             submittedBy:
               type: object
               nullable: true
