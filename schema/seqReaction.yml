@@ -261,6 +261,25 @@ components:
                       format: uuid
                       description: PcrBatchItem id
                       example: 28c5bce6-dde7-449f-bafd-120b714be43f
+            molecularAnalysisRunItem:
+              type: object
+              nullable: true
+              required:
+                - data
+              properties:
+                data:
+                  type: object
+                  required:
+                    - type
+                    - id
+                  properties:
+                    type:
+                      enum: [molecular-analysis-run-item]
+                    id:
+                      type: string
+                      format: uuid
+                      description: MolecularAnalysisRunItem id
+                      example: 0192ba17-266f-72d1-9618-516608166507
             storageUnitUsage:
               type: object
               nullable: true
